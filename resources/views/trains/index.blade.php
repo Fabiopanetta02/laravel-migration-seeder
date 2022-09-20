@@ -9,7 +9,13 @@
     @else
     <ul>
         @foreach ($trains as $train)
-            <li>{{ $train->azienda }}</li>
+            <li>{{ $train->Azienda }}</li>
+            <li>{{ $train->Stazione_di_partenza }}</li>
+            <li>{{ $train->Stazione_di_arrivo }}</li>
+            <li>{{ $train->Orario_di_partenza }}</li>
+            <li>{{ $train->Orario_di_arrivo }}</li>
+            <li>{{ $train->Codice_treno }}</li>
+            <li>{{ $train->Numero_carrozze }}</li>
         @endforeach
     </ul> 
     @endif
