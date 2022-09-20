@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// !PAGINE STATICHE
+Route::get('/', 'PageController@index')->name('home');
+Route::get('/about', 'PageController@about')->name('about');
+Route::get('/contacts', 'PageController@contacts')->name('contacts');
+
+
+Route::get('/trains', 'TrainController@index')->name('trains.index');
